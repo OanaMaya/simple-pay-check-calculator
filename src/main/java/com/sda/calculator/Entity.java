@@ -18,18 +18,20 @@ public abstract class Entity {
             this.city = city;
         } else {
             throw new InvalidDateTipeExceptions();}
-        System.out.println(" Error city can't be empty");
+        System.out.println(" Error: city can't be empty/null");
 
     }
 
     @Override
     public String toString() {
-        return "Entity{" +
-                "city='" + city + '\'' +
-                '}';
+        return " This city is: " + city +
+    " and the amount is: "+ amountReceived() + "\n";
     }
 
      public abstract double amountReceived();
+    // am facut-o abstracta astfel am modificat si clasa sa fie abstracta.
+   // o metoda adstracta este o implementare in clasa abstracta, din care se poate mostenii/
+    // destinate sa fie suprascrise(override)
 
 
 }

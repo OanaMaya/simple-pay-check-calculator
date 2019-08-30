@@ -16,9 +16,8 @@ public class Student extends Entity {
 
     @Override
     public String toString() {
-        return "Student{" + super.getCity() +
-                "scholarship=" + scholarship +
-                '}';
+        return "Student " + super.getCity() +
+                " scholarship = " + scholarship + " \n";
     }
 
     public Student(String city, double scholarship) {
@@ -28,7 +27,7 @@ public class Student extends Entity {
         } else {
             throw new InvalidDateTipeExceptions();
         }
-        System.out.println("Error: scholarship must be > 0");
+        System.out.println("Error: scholarship must be greater than 0");
 
     }
 

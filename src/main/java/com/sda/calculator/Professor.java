@@ -16,9 +16,8 @@ public class Professor extends Entity {
 
     @Override
     public String toString() {
-        return "Professor{" + super.getCity() +
-                "salary=" + salary +
-                '}';
+        return "Professor" + super.getCity() +
+                " salary=" + salary +  "\n";
     }
 
     public Professor(String city, double salary) {
@@ -28,7 +27,7 @@ public class Professor extends Entity {
         } else {
             throw new InvalidDateTipeExceptions();
         }
-        System.out.println(" Error: Salary must be > 0");
+        System.out.println(" Error: Salary must be greater than 0");
     }
 
     public double amountReceived() {
